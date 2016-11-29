@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9951B95A1D56CB740078B22A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9951B9591D56CB740078B22A /* AppDelegate.mm */; };
+		9951B95D1D56CB740078B22A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9951B95C1D56CB740078B22A /* main.mm */; };
+		9951B95F1D56CB740078B22A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9951B95E1D56CB740078B22A /* Assets.xcassets */; };
+		9951B96B1D56D06F0078B22A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951B96A1D56D06F0078B22A /* AppKit.framework */; };
+		9964384E1D60EDF1004C3BC5 /* AudioIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9964384D1D60EDF1004C3BC5 /* AudioIO.cpp */; };
+		998597841D57FFAA00260B94 /* librtaudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 998597831D57FFA400260B94 /* librtaudio.dylib */; };
+		9985978A1D58372B00260B94 /* librtmidi.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 998597891D58372B00260B94 /* librtmidi.3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9951B9551D56CB740078B22A /* MyVstHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVstHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9951B9581D56CB740078B22A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9951B9591D56CB740078B22A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		9951B95C1D56CB740078B22A /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		9951B95E1D56CB740078B22A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9951B9631D56CB750078B22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9951B96A1D56D06F0078B22A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9964384D1D60EDF1004C3BC5 /* AudioIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioIO.cpp; sourceTree = "<group>"; };
+		9965F1391D672D2700A2B0D5 /* PluginFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginFunctions.h; sourceTree = "<group>"; };
+		998597831D57FFA400260B94 /* librtaudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librtaudio.dylib; path = "/usr/local/Cellar/rt-audio/4.1.2/lib/librtaudio.dylib"; sourceTree = "<absolute>"; };
+		998597891D58372B00260B94 /* librtmidi.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librtmidi.3.dylib; path = /usr/local/Cellar/rtmidi/2.1.1/lib/librtmidi.3.dylib; sourceTree = "<absolute>"; };
+		9985978B1D59677B00260B94 /* MidiState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiState.h; sourceTree = "<group>"; };
+		998597911D59802600260B94 /* AudioIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioIO.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9951B9521D56CB740078B22A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9985978A1D58372B00260B94 /* librtmidi.3.dylib in Frameworks */,
+				9951B96B1D56D06F0078B22A /* AppKit.framework in Frameworks */,
+				998597841D57FFAA00260B94 /* librtaudio.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9951B94C1D56CB740078B22A = {
+			isa = PBXGroup;
+			children = (
+				9951B9571D56CB740078B22A /* MyVstHost */,
+				9951B9561D56CB740078B22A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9951B9561D56CB740078B22A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9951B9551D56CB740078B22A /* MyVstHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9951B9571D56CB740078B22A /* MyVstHost */ = {
+			isa = PBXGroup;
+			children = (
+				9951B9581D56CB740078B22A /* AppDelegate.h */,
+				9951B9591D56CB740078B22A /* AppDelegate.mm */,
+				9951B95E1D56CB740078B22A /* Assets.xcassets */,
+				9951B9631D56CB750078B22A /* Info.plist */,
+				9951B95B1D56CB740078B22A /* Supporting Files */,
+				998597801D57F97C00260B94 /* Frameworks and Libraries */,
+			);
+			path = MyVstHost;
+			sourceTree = "<group>";
+		};
+		9951B95B1D56CB740078B22A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9965F1391D672D2700A2B0D5 /* PluginFunctions.h */,
+				9951B95C1D56CB740078B22A /* main.mm */,
+				998597911D59802600260B94 /* AudioIO.h */,
+				9964384D1D60EDF1004C3BC5 /* AudioIO.cpp */,
+				9985978B1D59677B00260B94 /* MidiState.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		998597801D57F97C00260B94 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				998597891D58372B00260B94 /* librtmidi.3.dylib */,
+				998597831D57FFA400260B94 /* librtaudio.dylib */,
+				9951B96A1D56D06F0078B22A /* AppKit.framework */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9951B9541D56CB740078B22A /* MyVstHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9951B9661D56CB750078B22A /* Build configuration list for PBXNativeTarget "MyVstHost" */;
+			buildPhases = (
+				9951B9511D56CB740078B22A /* Sources */,
+				9951B9521D56CB740078B22A /* Frameworks */,
+				9951B9531D56CB740078B22A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyVstHost;
+			productName = MyVstHost;
+			productReference = 9951B9551D56CB740078B22A /* MyVstHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9951B94D1D56CB740078B22A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "marvin h";
+				TargetAttributes = {
+					9951B9541D56CB740078B22A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9951B9501D56CB740078B22A /* Build configuration list for PBXProject "MyVstHost" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9951B94C1D56CB740078B22A;
+			productRefGroup = 9951B9561D56CB740078B22A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9951B9541D56CB740078B22A /* MyVstHost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9951B9531D56CB740078B22A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9951B95F1D56CB740078B22A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9951B9511D56CB740078B22A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9964384E1D60EDF1004C3BC5 /* AudioIO.cpp in Sources */,
+				9951B95D1D56CB740078B22A /* main.mm in Sources */,
+				9951B95A1D56CB740078B22A /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9951B9641D56CB750078B22A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9951B9651D56CB750078B22A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9951B9671D56CB750078B22A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyVstHost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/portaudio/19.20140130/lib,
+					"/usr/local/Cellar/rt-audio/4.1.2/lib",
+					/usr/local/Cellar/rtmidi/2.1.1/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvinh.MyVstHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include /Users/marvinh/SDKs/VST3\\ SDK";
+			};
+			name = Debug;
+		};
+		9951B9681D56CB750078B22A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MyVstHost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/portaudio/19.20140130/lib,
+					"/usr/local/Cellar/rt-audio/4.1.2/lib",
+					/usr/local/Cellar/rtmidi/2.1.1/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvinh.MyVstHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include /Users/marvinh/SDKs/VST3\\ SDK";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9951B9501D56CB740078B22A /* Build configuration list for PBXProject "MyVstHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9951B9641D56CB750078B22A /* Debug */,
+				9951B9651D56CB750078B22A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9951B9661D56CB750078B22A /* Build configuration list for PBXNativeTarget "MyVstHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9951B9671D56CB750078B22A /* Debug */,
+				9951B9681D56CB750078B22A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9951B94D1D56CB740078B22A /* Project object */;
+}
